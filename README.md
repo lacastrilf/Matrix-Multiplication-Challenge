@@ -41,7 +41,7 @@
         ```
 
 
-## Methods
+## Methods and tools
 
 Pointers and aligned Memory Allocation
   ```
