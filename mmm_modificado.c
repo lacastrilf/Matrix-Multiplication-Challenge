@@ -6,7 +6,7 @@
 #define N 50
 #define MIN_SIZE 2
 #define MAX_SIZE 5000
-#define MAX_NUM 10000000.0
+#define MAX_NUM 100000
 
 int main()
 {
