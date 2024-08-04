@@ -55,7 +55,7 @@ Pointers and aligned Memory Allocation
   ```
 Using OpenMP for the parallelization of tasks such as matrix initialization and matrix multiplication in quadrants
 ```
-    mkdir bin
+    #pragma omp parallel for
  ```
 
 ## Screenshots of the code running
