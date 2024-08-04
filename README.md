@@ -3,7 +3,7 @@
 ## Contents
 - [Running](#running)
 - [Methods](#Methods)
-- [Screenshots of the code running](#authors)
+- [Screenshots of the code running](#Screenshots)
 
 ## Running
 
@@ -58,7 +58,7 @@ Using OpenMP for the parallelization of tasks such as matrix initialization and 
     #pragma omp parallel for
  ```
 
-## Screenshots of the code running
+## Screenshots
 -Initial Runnig Time:
     ![image](https://github.com/user-attachments/assets/d7b4ca97-2cf3-4b01-9097-9cb266f2deb2)
 
