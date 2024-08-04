@@ -2,7 +2,7 @@
 
 ## Contents
 - [Running](#running)
-- [Methods or tools used](#Methods)
+- [Methods](#Methods)
 - [Screenshots of the code running](#authors)
 
 ## Running
@@ -41,7 +41,7 @@
         ```
 
 
-## Methods and tools
+## Methods
 
 Pointers and aligned Memory Allocation
   ```
