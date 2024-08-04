@@ -54,9 +54,9 @@ Pointers and aligned Memory Allocation
     matrixC = _aligned_malloc(size * size * sizeof(double), 64);
   ```
 Using OpenMP for the parallelization of tasks such as matrix initialization and matrix multiplication in quadrants
-    ```
-    #pragma omp parallel for
-     ```
+```
+    mkdir bin
+ ```
 
 ## Screenshots of the code running
 - 
