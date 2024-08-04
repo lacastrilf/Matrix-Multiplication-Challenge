@@ -59,5 +59,9 @@ Using OpenMP for the parallelization of tasks such as matrix initialization and 
  ```
 
 ## Screenshots of the code running
-- ![image](https://github.com/user-attachments/assets/50ba4aa5-22af-4e75-b034-b297069e6fd6)
+-Initial Runnig Time:
+![image](https://github.com/user-attachments/assets/d7b4ca97-2cf3-4b01-9097-9cb266f2deb2)
+
+-Final Running Time:
+ ![image](https://github.com/user-attachments/assets/50ba4aa5-22af-4e75-b034-b297069e6fd6)
 
