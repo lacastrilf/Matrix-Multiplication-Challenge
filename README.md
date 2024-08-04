@@ -2,8 +2,8 @@
 
 ## Contents
 - [Running](#running)
-- [Recommendations](#recommendations)
-- [Authors](#authors)
+- [Methods or tools used](#Methods)
+- [Screenshots of the code running](#authors)
 
 ## Running
 
@@ -41,42 +41,22 @@
         ```
 
 
-**NOTE:** If you have the following message or something similar
-```
-[1]    2460040 segmentation fault (core dumped)  ./bin/mmm
-```
-It is because the program uses very long arrays, and it is probably a stack overflow problem that you can solve by executing:
-```
-ulimit -s unlimited
-```
-Run the program again and it should work. If any of these solutions help you, you can always contact us!
+## Methods
 
-**NOTE:** by default, the program will create random arrays from `2x2` to `5000x5000`, and perform `50` tests. If you are going to run the program on your pc or perform tests in APOLO, we recommend that you change these parameters, for example:
-```
-#define N 10
-#define MIN_SIZE 2
-#define MAX_SIZE 1000
-```
-When you run the final test of the program, you should recover the original values:
-```
-#define N 50
-#define MIN_SIZE 2
-#define MAX_SIZE 5000
-```
+Pointers and aligned Memory Allocation
+  ```
+    double(*matrixA)[size];
+    double(*matrixB)[size];
+    double(*matrixC)[size];
 
-## Recommendations
+    matrixA = _aligned_malloc(size * size * sizeof(double), 64);
+    matrixB = _aligned_malloc(size * size * sizeof(double), 64);
+    matrixC = _aligned_malloc(size * size * sizeof(double), 64);
+  ```
+Using OpenMP for the parallelization of tasks such as matrix initialization and matrix multiplication in quadrants
+    ```
+    #pragma omp parallel for
+     ```
 
-When you open the `mmm_implementation.c` file, you will see some comments, indicating the starting point endpoint to modify.
-
-Search for information on the Internet. Please do not rely on AI's, such as ChatGPT, Claude, or Gemini; you can use them for support, but they can also be wrong.
-
-You have your own time to access APOLO, don't forget to respect these times, because other people also need access. Before you start testing in APOLO you should test and modify the code on your pc.
-
-Create your own GitHub repository and clone it in APOLO, it will be easier for you.
-
-Always run the `job.sh` script to test the `mmm_implementation.c`.
-
-## Authors
-- Juan Manuel Gómez
-- Santiago Rodriguez
-- Santiago Neusa
+## Screenshots of the code running
+- 
