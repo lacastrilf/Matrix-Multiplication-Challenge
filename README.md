@@ -26,7 +26,7 @@
 
 5. Compile the `mmm_implementation.c` file inside the bin directory:
     ```
-    gcc -o bin/mmm mmm_implementation.c
+    gcc -o mmm_modificado.c -fopenmp -O2
     ```
 
 6. Run the program:
