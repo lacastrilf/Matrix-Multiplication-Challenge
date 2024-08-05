@@ -24,7 +24,7 @@
     mkdir bin
     ```
 
-5. Compile the `mmm_implementation.c` file inside the bin directory:
+5. Compile the `mmm_modificado.c` file inside the bin directory:
     ```
     gcc -o mmm_modificado.c -fopenmp -O2
     ```
