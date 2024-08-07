@@ -20,9 +20,9 @@ int main()
     double(*matrixC)[size];
 
     // Align the matrix with aligned_malloc.
-    matrixA = _aligned_malloc(size * size * sizeof(double), 64);
-    matrixB = _aligned_malloc(size * size * sizeof(double), 64);
-    matrixC = _aligned_malloc(size * size * sizeof(double), 64);
+    matrixA = _aligned_alloc(size * size * sizeof(double), 64);
+    matrixB = _aligned_alloc(size * size * sizeof(double), 64);
+    matrixC = _aligned_alloc(size * size * sizeof(double), 64);
 
     while (iterator++ < N)
     {
