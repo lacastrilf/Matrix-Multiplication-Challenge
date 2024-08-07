@@ -14,7 +14,15 @@ int main()
     int size = MIN_SIZE + (rand() % MAX_SIZE), iterator = 0;
     double time_spent = 0.0;
 
-double matrixA[size][size] _attribute((aligned(64))), matrixB[size][size] __attribute((aligned(64))), matrixC[size][size] __attribute_((aligned(64)));
+    // Pointers to the current directory of the matrix.
+    double(*matrixA)[size];
+    double(*matrixB)[size];
+    double(*matrixC)[size];
+
+    // Align the matrix with aligned_malloc.
+    matrixA = _aligned_malloc(size * size * sizeof(double), 64);
+    matrixB = _aligned_malloc(size * size * sizeof(double), 64);
+    matrixC = _aligned_malloc(size * size * sizeof(double), 64);
 
     while (iterator++ < N)
     {
