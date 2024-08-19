@@ -57,6 +57,23 @@ Using OpenMP for the parallelization of tasks such as matrix initialization and 
 ```
     #pragma omp parallel for
  ```
+Change the multiplication order from jki to ijk.
+Divide the multiplication into four quadrants to execute each quadrant in parallel.
+
+```
+#pragma omp parallel for
+
+        for (int i = 0; i < (size / 2); i++)
+        {
+            for (int j = 0; j < size / 2; j++)
+            {
+                for (int k = 0; k < size; k++)
+                {
+                    matrixC[i][j] += matrixA[i][k] * matrixB[j][k];
+                }
+            }
+        }
+ ```
 
 ## Screenshots
 -Initial Runnig Time:
